@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      body{
+        background-image: url(https://www.shutterstock.com/image-vector/ai-image-cybernetic-anthropomorphic-woman-260nw-2052291122.jpg);
+        background-size: cover;
+      }
+      /* Style for the button */
+  .top-right-button {
+      position: fixed;
+      top: 20px; /* Adjust top distance as needed */
+      right: 20px; /* Adjust right distance as needed */
+      padding: 10px 20px;
+      background-color: #c8b6d7;
+      font-weight: bold;
+      color: rgb(26, 4, 4);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+}
+.dropdown {
+      position: absolute;
+      top: 20px; /* Adjust the distance from the top */
+      right: 50px; /* Adjust the distance from the right */
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropbtn{
+      background-color: #674188;
+      color: white;
+      font-weight: bold;
+      border-radius: 50%;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="chat-window">
+      <div class="main-title">OpenAI Chat Automation Web</div>
+      <div id="chat-messages"></div>
+      <form id="chat-form">
+        <input
+          type="text"
+          id="chat-input"
+          autocomplete="off"
+          placeholder="Type your message here"
+          required
+        />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="app.js"></script>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Settings</button>
+    <div class="dropdown-content">
+      <a href="#">Change Username</a>
+      <a href="#">Change Password</a>
+      <a href="#">Help</a>
+      <a href="index.html">Logout</a>
+  </body>
+</html>
